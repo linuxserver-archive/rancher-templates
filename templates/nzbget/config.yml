@@ -1,0 +1,6 @@
+name: NZBGet
+description: |
+  NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.version: latest
+category: Usenet
+maintainer: Linuxserver.io
+projectURL: http://nzbget.net/

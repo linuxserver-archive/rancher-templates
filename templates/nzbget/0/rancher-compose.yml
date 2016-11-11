@@ -1,0 +1,42 @@
+.catalog:
+  name: "NZBGet"
+  version: "v1"
+  description: "LinuxServer.io - NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources."
+  questions:
+    - variable: PUID
+      label: "Please provide the user ID to run the container as"
+      description: "Run container as specified user, e.g. '1050'"
+      default: 1050
+      required: true
+      type: string
+    - variable: PGID
+      label: "Please provide the group ID to run the container as"
+      description: "Specify container group for runtime, e.g. '1050'"
+      default: 1050
+      required: true
+      type: string
+    - variable: port
+      label: "External port"
+      description: "Internal listener port is 6789, set the external port."
+      default: 27020
+      required: true
+      type: string
+    - variable: path-config
+      label: "Path to configuration"
+      description: "Maps to /config inside the container"
+      default: /opt/appdata/nzbget/config
+      type: string
+      required: true
+    - variable: path-downloads
+      label: "Path to downloads"
+      description: "Maps to /downloads inside the container. The temporary download location."
+      default: /opt/downloads
+      type: string
+      required: true
+    - variable: path-downloads-complete
+      label: "Path to completed downloads"
+      description: "Maps to /downloads inside the container. The completed download location."
+      default: /mnt/disk1/downloads/complete
+      type: string
+      required: true
+nzbget:

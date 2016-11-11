@@ -1,0 +1,12 @@
+nzbget:
+  image: linuxserver/nzbget
+  volumes:
+    - ${path-config}:/config
+    - ${path-downloads}:/downloads
+    - ${path-downloads-complete}:/downloads/complete
+  ports:
+    - ${port}:6789
+  restart: always
+  environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
