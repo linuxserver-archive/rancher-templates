@@ -6,6 +6,6 @@ plex:
   net: host
   restart: always
   environment:
-    - VERSION=plexpass
+    - VERSION=${version}
     - PUID=${PUID}
     - PGID=${PGID}

@@ -1,7 +1,7 @@
 .catalog:
   name: "Plex Media Server"
   version: "v1"
-  description: "Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server."
+  description: "LinuxServer.io - Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server."
   questions:
     - variable: PUID
       label: "Please provide the user ID to run the container as"
@@ -25,6 +25,12 @@
       label: "Path to data"
       description: "Maps /data inside the container"
       default: /mnt/storage
+      type: string
+      required: true
+    - variable: version
+      label: "Plex version"
+      description: "Supported options: 'latest', 'public'. Plexpass is now detected automatically"
+      default: latest
       type: string
       required: true
 plex:
