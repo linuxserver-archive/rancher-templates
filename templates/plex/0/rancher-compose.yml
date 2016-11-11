@@ -15,5 +15,14 @@
       default: 1050
       required: true
       type: string
-
+    - variable: path-config
+      label: "Path to configuration"
+      description: "Maps /config inside the container"
+      default: /opt/appdata/plex
+      required: true
+    - variable: path-data
+      label: "Path to data"
+      description: "Maps /data inside the container"
+      default: /mnt/storage
+      required: true
 plex:
