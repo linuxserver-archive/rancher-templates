@@ -1,0 +1,12 @@
+plex:
+  image: linuxserver/plex
+  container_name: plex
+  volumes:
+    - /opt/appdata/plex:/config
+    - /mnt/storage:/data
+  network_mode: host
+  restart: always
+  environment:
+    - VERSION=plexpass
+    - PUID=1050
+    - PGID=1050

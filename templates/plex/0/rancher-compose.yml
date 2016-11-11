@@ -1,0 +1,17 @@
+.catalog:
+  name: "Plex Media Server"
+  version: "v1"
+  description: "Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server."
+  questions:
+    - variable: uid
+      label: "Please provide the user ID to run the container as"
+      description: "Run container as specified user, e.g. '1050'"
+      default: 1050
+      required: true
+      type: string
+    - variable: gid
+      label: "Please provide the group ID to run the container as"
+      description: "Specify container group for runtime, e.g. '1050'"
+      default: 1050
+      required: true
+      type: string
