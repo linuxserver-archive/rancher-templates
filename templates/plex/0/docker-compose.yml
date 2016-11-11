@@ -1,8 +1,8 @@
 plex:
   image: linuxserver/plex
   volumes:
-    - /opt/appdata/plex:/config
-    - /mnt/storage:/data
+    - ${path-config}:/config
+    - ${path-data}:/data
   net: host
   restart: always
   environment:

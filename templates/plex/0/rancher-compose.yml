@@ -19,10 +19,12 @@
       label: "Path to configuration"
       description: "Maps /config inside the container"
       default: /opt/appdata/plex
+      type: string
       required: true
     - variable: path-data
       label: "Path to data"
       description: "Maps /data inside the container"
       default: /mnt/storage
+      type: string
       required: true
 plex:
