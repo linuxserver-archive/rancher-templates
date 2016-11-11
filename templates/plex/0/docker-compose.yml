@@ -8,5 +8,5 @@ plex:
   restart: always
   environment:
     - VERSION=plexpass
-    - PUID=1050
-    - PGID=1050
+    - PUID=
+    - PGID=
