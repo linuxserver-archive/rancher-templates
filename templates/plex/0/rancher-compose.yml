@@ -15,3 +15,5 @@
       default: 1050
       required: true
       type: string
+
+plex:
