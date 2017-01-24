@@ -1,0 +1,36 @@
+.catalog:
+  name: "Sonarr"
+  version: "v1"
+  description: "LinuxServer.io - Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
+  questions:
+    - variable: PUID
+      label: "Please provide the user ID to run the container as"
+      description: "Run container as specified user, e.g. '1050'"
+      default: 1050
+      required: true
+      type: string
+    - variable: PGID
+      label: "Please provide the group ID to run the container as"
+      description: "Specify container group for runtime, e.g. '1050'"
+      default: 1050
+      required: true
+      type: string
+    - variable: path-config
+      label: "Path to configuration"
+      description: "Maps /config inside the container"
+      default: /opt/appdata/sonarr
+      type: string
+      required: true
+    - variable: path-data
+      label: "Path to TV shows"
+      description: "Maps /data inside the container"
+      default: /mnt/storage
+      type: string
+      required: true
+    - variable: path-downloads
+      label: "Path to downloads"
+      description: "Path to download client downloads"
+      default: /mnt/storage/downloads
+      type: string
+      required: true
+plex:

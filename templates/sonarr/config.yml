@@ -1,0 +1,6 @@
+name: Sonarr
+description: |
+  Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users.
+category: Media
+maintainer: Linuxserver.io
+projectURL: https://sonarr.tv/

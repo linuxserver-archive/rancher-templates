@@ -1,0 +1,13 @@
+plex:
+  image: linuxserver/sonarr
+  volumes:
+    - /dev/rtc:/dev/rtc:ro
+    - ${path-config}:/config
+    - ${path-data}:/tv
+    - ${path-downloads}:/downloads
+  ports:
+    - ${port}:8989
+  restart: always
+  environment:
+    - PUID=${PUID}
+    - PGID=${PGID}
