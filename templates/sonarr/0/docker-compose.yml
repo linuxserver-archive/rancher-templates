@@ -1,4 +1,4 @@
-plex:
+sonarr:
   image: linuxserver/sonarr
   volumes:
     - /dev/rtc:/dev/rtc:ro
@@ -9,5 +9,5 @@ plex:
     - ${port}:8989
   restart: always
   environment:
-    - PUID=${PUID}
-    - PGID=${PGID}
+    - PUID:${PUID}
+    - PGID:${PGID}
