@@ -3,7 +3,12 @@
   version: "v1"
   description: "LinuxServer.io - Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
   questions:
-    - variable: PUID
+    - variable: port
+      label: "Please provide the port the host will listen on"
+      description: "open port for access to web interface, e.g. '8989'"
+      default: 8989
+      required: true
+      type: string    - variable: PUID
       label: "Please provide the user ID to run the container as"
       description: "Run container as specified user, e.g. '1050'"
       default: 1050
