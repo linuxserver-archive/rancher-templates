@@ -8,7 +8,7 @@
       description: "open port for access to web interface, e.g. '8989'"
       default: 8989
       required: true
-      type: string    
+      type: int    
     - variable: PUID
       label: "Please provide the user ID to run the container as"
       description: "Run container as specified user, e.g. '1050'"

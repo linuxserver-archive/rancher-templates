@@ -6,7 +6,7 @@ sonarr:
     - /mnt/lsio/tv :/tv
     - /mnt/lsio/downloads :/downloads
   ports:
-    - ${port} =8989
+    - ${port}:8989
   restart: always
   environment:
     - PUID= ${PUID}
