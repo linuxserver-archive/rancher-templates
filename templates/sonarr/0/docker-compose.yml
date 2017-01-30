@@ -9,5 +9,5 @@ sonarr:
     - ${port} :8989
   restart: always
   environment:
-    - PUID: ${PUID}
-    - PGID: ${PGID}
+    - PUID= ${PUID}
+    - PGID= ${PGID}
