@@ -1,0 +1,3 @@
+http://www.rancher.com is an orchestration tool for Docker containers, with powerful features for the enterprise.  It's also pretty great for a home lab or HTPC setup.
+
+Rancher Catalog templates for Linuxserver.io Docker images can be found here.  To use them in your Rancher install, go to Admin/Settings in your Rancher control panel and add 'Linuxserver.io' 'https://github.com/linuxserver/rancher-templates' 'master' to the 'add catalog' section.
