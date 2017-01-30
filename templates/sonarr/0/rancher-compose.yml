@@ -15,22 +15,4 @@
       default: 1050
       required: true
       type: string
-    - variable: path-config
-      label: "Path to configuration"
-      description: "Maps /config inside the container"
-      default: /opt/appdata/sonarr
-      type: string
-      required: true
-    - variable: path-data
-      label: "Path to TV shows"
-      description: "Maps /data inside the container"
-      default: /mnt/storage
-      type: string
-      required: true
-    - variable: path-downloads
-      label: "Path to downloads"
-      description: "Path to download client downloads"
-      default: /mnt/storage/downloads
-      type: string
-      required: true
-plex:
+sonarr:
