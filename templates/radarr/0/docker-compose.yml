@@ -1,0 +1,14 @@
+radarr:
+  image: linuxserver/radarr
+  volumes:
+    - /dev/rtc :/dev/rtc:ro
+    - /mnt/lsio/config/radarr :/config
+    - /mnt/lsio/movies :/movies
+    - /mnt/lsio/downloads :/downloads
+  ports:
+    - ${port}:7878
+  restart: always
+  environment:
+    - PUID= ${PUID}
+    - PGID= ${PGID}
+    - TZ= ${timezone}
