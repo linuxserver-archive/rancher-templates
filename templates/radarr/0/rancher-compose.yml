@@ -21,10 +21,28 @@
       default: 1050
       required: true
       type: string
-     - variable: timezone
+    - variable: timezone
       label: "Please provide the timezone information"
       description: "Specify timezone information, eg Europe/London"
       default: "Europe/London"
       required: true
       type: string
+    - variable: "config"
+      label: "config Storage"
+      description: "the path for the config Storage"
+      required: true
+      default: /opt/user/config/radarr
+      type: "string"
+    - variable: "movies"
+      label: "movies Storage"
+      description: "the path for the movies Storage"
+      required: true
+      default: /opt/user/storage/movies
+      type: "string"
+    - variable: "downloads"
+      label: "downloads Storage"
+      description: "the path for dowbnloads Storage"
+      required: true
+      default: /opt/user/storage/downloads
+      type: "string"
 radarr:
